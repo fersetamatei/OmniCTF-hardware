@@ -16,6 +16,32 @@ Full writeup: https://mapleleaf.ro/keep-talking-and-everybody-explodes-writeup-o
 | - | Some male-male wires and some female-male wires | |
 | 1x | The box (STL files in this repo) | |
 
+## Wiring
+
+| Arduino UNO | to addon |
+|---|---|
+| `5V` | LCD1602 `VCC` |
+| `3.3V` | Buzzer `+` |
+| `GND` | LCD GND + ambele butoane + capătul comun al celor 3 fire + reset D12 |
+| `A0` | Buton random message |
+| `A1` | Buton `+1 second` |
+| `A2` | Fir RED — **firul corect** |
+| `A3` | Fir BLUE — greșit |
+| `A4` | LCD `SDA` |
+| `A5` | LCD `SCL` |
+| `D2` | Keypad `R1` / pin 5 |
+| `D3` | Keypad `R2` / pin 6 |
+| `D4` | Keypad `R3` / pin 7 |
+| `D5` | Keypad `R4` / pin 8 |
+| `D6` | Keypad `C1` / pin 4 |
+| `D7` | Keypad `C2` / pin 3 |
+| `D8` | Keypad `C3` / pin 2 |
+| `D9` | Keypad `C4` / pin 1 |
+| `D10` | Buzzer `-` prin `330Ω` |
+| `D11` | Fir YELLOW — greșit |
+| `D12` | Reset jumper către GND |
+| `D13` | liber |
+
 ## Flashing the firmware
 
 1. Flash the first firmware to the Arduino.
