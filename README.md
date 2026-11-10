@@ -18,15 +18,15 @@ Full writeup: https://mapleleaf.ro/keep-talking-and-everybody-explodes-writeup-o
 
 ## Wiring
 
-| Arduino UNO | to addon |
+| Arduino UNO | addon |
 |---|---|
 | `5V` | LCD1602 `VCC` |
 | `3.3V` | Buzzer `+` |
-| `GND` | LCD GND + ambele butoane + capătul comun al celor 3 fire + reset D12 |
+| `GND` | Common ground between: LCD GND + both buttons + the ground for the 3 wires |
 | `A0` | Buton random message |
 | `A1` | Buton `+1 second` |
-| `A2` | Fir RED — **firul corect** |
-| `A3` | Fir BLUE — greșit |
+| `A2` | Fir RED - **correct wire** |
+| `A3` | Fir BLUE - wrong wire |
 | `A4` | LCD `SDA` |
 | `A5` | LCD `SCL` |
 | `D2` | Keypad `R1` / pin 5 |
@@ -37,10 +37,8 @@ Full writeup: https://mapleleaf.ro/keep-talking-and-everybody-explodes-writeup-o
 | `D7` | Keypad `C2` / pin 3 |
 | `D8` | Keypad `C3` / pin 2 |
 | `D9` | Keypad `C4` / pin 1 |
-| `D10` | Buzzer `-` prin `330Ω` |
-| `D11` | Fir YELLOW — greșit |
-| `D12` | Reset jumper către GND |
-| `D13` | liber |
+| `D10` | Buzzer `-` trough a `330Ω` resistor |
+| `D11` | Fir YELLOW - Wrong wire |
 
 ## Flashing the firmware
 
